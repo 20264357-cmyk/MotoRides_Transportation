@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoRides Transportation Services</title>
+</head>
+
+<body id="top">
+
+    
+    <header>
+        <h1>MotoRides Transportation Services</h1>
+        <p><i>Your journey, our priority!</i></p>
+
+        <nav>
+            <a href="#book">Book a Ride</a> |
+            <a href="#fleet">Our Vehicles</a> |
+            <a href="#map">Location</a> |
+            <a href="#media">Media</a> |
+            <a href="#schedule">Schedule</a> |
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+
+    <section id="book">
+        <h2>Book a Ride</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Passenger Information</legend>
+
+                <p>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                    <label for="pickup">Pickup Location:</label>
+                    <input type="text" id="pickup" name="pickup"
+                           list="places" required>
+                </p>
+
+                <p>
+                    <label for="dropoff">Drop-off Location:</label>
+                    <input type="text" id="dropoff" name="dropoff"
+                           list="places" required>
+                </p>
+
+                <datalist id="places">
+                    <option value="Baguio City Hall">
+                    <option value="SM City Baguio">
+                    <option value="Burnham Park">
+                    <option value="University of Baguio">
+                    <option value="Baguio Bus Terminal">
+                </datalist>
+
+                <p>
+                    <label for="date">Travel Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </p>
+
+                <p>
+                    <label for="time">Travel Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </p>
+
+                <p>
+                    <label for="passengers">Number of Passengers:</label>
+                    <input type="number" id="passengers" name="passengers"
+                           min="1" max="10" value="1" required>
+                </p>
+
+                <p>
+                    <label for="vehicle">Choose a Vehicle:</label>
+                    <select id="vehicle" name="vehicle" required>
+                        <option value="">Select a vehicle</option>
+                        <option value="taxi">Taxi</option>
+                        <option value="van">Passenger Van</option>
+                        <option value="car">Private Car</option>
+                        <option  value="motorcycle">Motorcycle</option>
+                        <option value="minibus">Mini Bus</option>
+                    </select>
+                </p>
+
+                <p>Payment Method:</p>
+
+                <p>
+                    <input type="radio" id="cash" name="payment"
+                           value="cash" checked>
+                    <label for="cash">Cash</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="card" name="payment"
+                           value="card">
+                    <label for="card">Credit/Debit Card</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="ewallet" name="payment"
+                           value="ewallet">
+                    <label for="ewallet">E-Wallet</label>
+                </p>
+
+                <p>Additional Services:</p>
+
+                <p>
+                    <input type="checkbox" id="luggage" name="extras"
+                           value="luggage">
+                    <label for="luggage">Extra Luggage Space</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="aircon" name="extras"
+                           value="aircon">
+                    <label for="aircon">Air Conditioning</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="assistance" name="extras"
+                           value="assistance">
+                    <label for="assistance">Passenger Assistance</label>
+                </p>
+
+                <p>
+                    <label for="notes">Special Requests:</label><br>
+                    <textarea id="notes" name="notes"
+                              rows="4" cols="40"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="terms" name="terms"
+                           required>
+                    <label for="terms">
+                        I agree to the <a href="#terms-info">Terms and Conditions</a>.
+                    </label>
+                </p>
+
+                <button type="submit">Book Now</button>
+                <button type="reset">Clear Form</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="vehicles">
+        <h2>Our Vehicles</h2>
+            <p>Choose the vehicle that suits your journey.</p>
+
+             <figure>
+              <img src="InnovaTaxi.jpg"
+                   alt="Innova Taxi" width="400" height="250">
+                <figcaption>
+               <h3>Innova Taxi</h3>
+            Comfortable rides for families and small groups.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="ToyotaVan.jpg"
+             alt="Toyota Van" width="400" height="250">
+             <figcaption>
+            <h3>Toyota Van</h3>
+            Spacious transportation for groups and luggage.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="ToyotaVios.jpg"
+             alt="Toyota Vios sedan" width="400" height="250">
+            <figcaption>
+            <h3>Toyota Vios</h3>
+            A practical sedan for everyday travel.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="Motorcycle.jpg"
+             alt="Motorcycle" width="400" height="250">
+            <figcaption>
+            <h3>Motorcycle</h3>
+            A convenient option for solo trips.
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="Minibus.jpg"
+             alt="Minibus" width="400" height="250">
+            <figcaption>
+            <h3>Minibus</h3>
+            Suitable for larger groups.
+        </figcaption>
+    </figure>
+</section>
+
+    <hr>
+
+    
+    <section id="map">
+        <h2>Our Location</h2>
+        <p>View Baguio City area using the map below.</p>
+
+        <iframe
+            title="Map of Baguio City"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=120.575%2C16.400%2C120.610%2C16.430&layer=mapnik&marker=16.412%2C120.596"
+            width="600"
+            height="400">
+        </iframe>
+
+        <p>
+            <a href="https://www.openstreetmap.org/"
+               target="_blank" rel="noopener">
+                Open OpenStreetMap
+            </a>
+        </p>
+
+        <h2>MotoRides Route Overview</h2>
+
+<p>Click a location to view it on the map:</p>
+
+<ul>
+    <li>
+        <a href="https://www.openstreetmap.org/search?query=Baguio%20Bus%20Terminal"
+           target="_blank">
+            Baguio Bus Terminal
+        </a>
+    </li>
+
+    <li>
+        <a href="https://www.openstreetmap.org/search?query=Baguio%20City%20Hall"
+           target="_blank">
+            Baguio City Hall
+        </a>
+    </li>
+
+    <li>
+        <a href="https://www.openstreetmap.org/search?query=Burnham%20Park%20Baguio"
+           target="_blank">
+            Burnham Park
+        </a>
+    </li>
+</ul>
+
+<p>
+    <strong>Route:</strong>
+    Bus Terminal → City Hall → Burnham Park
+</p>
+
+    <hr>
+ 
+ 
+<section id="media">
+    <h2>Media</h2>
+
+    <h3>How MotoRides Works (Video)</h3>
+
+<div class="video-container">
+    <iframe
+        src="https://www.youtube.com/embed/-xLBm_GfyHg"
+        title="How MotoRides Works"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+
+
+
+<h3>Driver Announcement (Audio)</h3>
+
+<audio controls>
+    <source src="Cinematic Action Teaser NoCopyright Background Music _ Rush by ArcticFoxMusic [-9D3b3G-2YQ].mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+    <h3>Watch on YouTube</h3>
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/935luQvNs8I"
+        title="How MotoRides Works on YouTube"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+    <hr>
+</section>
+
+
+
+    <hr>
+
+    
+    <section id="schedule">
+        <h2>Route Schedule and Fares</h2>
+
+        <table border="1" cellpadding="6" cellspacing="0">
+            <caption>GoRide Transportation Schedule</caption>
+
+            <thead>
+                <tr>
+                    <th>Route</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Fare</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Terminal to City Hall</td>
+                    <td>8:00 AM</td>
+                    <td>8:20 AM</td>
+                    <td>₱50</td>
+                </tr>
+
+                <tr>
+                    <td>City Hall to University</td>
+                    <td>9:00 AM</td>
+                    <td>9:15 AM</td>
+                    <td>₱40</td>
+                </tr>
+
+                <tr>
+                    <td>University to Burnham Park</td>
+                    <td>10:00 AM</td>
+                    <td>10:15 AM</td>
+                    <td>₱35</td>
+                </tr>
+
+                <tr>
+                    <td>Burnham Park to Terminal</td>
+                    <td>11:00 AM</td>
+                    <td>11:20 AM</td>
+                    <td>₱45</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Search for a Route</h3>
+
+        <form action="#" method="get">
+            <label for="route">Choose a Route:</label>
+
+            <select id="route" name="route">
+                <option value="terminal-cityhall">
+                    Terminal to City Hall
+                </option>
+                <option value="cityhall-university">
+                    City Hall to University
+                </option>
+                <option value="university-burnham">
+                    University to Burnham Park
+                </option>
+                <option value="burnham-terminal">
+                    Burnham Park to Terminal
+                </option>
+            </select>
+
+            <button type="submit">Search Route</button>
+        </form>
+    </section>
+
+    <hr>
+
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form action="#" method="post"
+              enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Customer Feedback</legend>
+
+                <p>
+                    <label for="feedback-name">Full Name:</label>
+                    <input type="text" id="feedback-name"
+                           name="feedback-name" required>
+                </p>
+
+                <p>
+                    <label for="rating">Rate Our Service (1-10):</label>
+                    <input type="range" id="rating" name="rating"
+                           min="1" max="10" value="10">
+                </p>
+
+                <p>
+                    <label for="topic">Feedback Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="service">Customer Service</option>
+                        <option value="vehicle">Vehicle</option>
+                        <option value="driver">Driver</option>
+                        <option value="schedule">Schedule</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="feedback">Your Feedback:</label><br>
+                    <textarea id="feedback" name="feedback"
+                              rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <label for="photo">Upload an Image:</label>
+                    <input type="file" id="photo" name="photo"
+                           accept="image/*">
+                </p>
+
+                <button type="submit">Send Feedback</button>
+            </fieldset>
+        </form>
+
+        <h3>Reach Us</h3>
+        <address>
+            GoRide Transportation Services<br>
+            General Luna Road, Baguio City, Philippines<br>
+            Phone: <a href="tel:+09460529364">+63 946 052 9364</a><br>
+            Email: <a href="mailto:MotoRides@gmail.com">
+                MotoRides@gmail.com
+            </a>
+        </address>
+
+        <h3>Useful Links</h3>
+        <ul>
+            <li>
+                <a href="https://www.openstreetmap.org/"
+                   target="_blank" rel="noopener">
+                    OpenStreetMap
+                </a>
+            </li>
+            <li>
+                <a href="https://maps.google.com/"
+                   target="_blank" rel="noopener">
+                    Google Maps
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/muscara.reddick.denson"
+                   target="_blank" rel="noopener">
+                    Facebook
+                </a>
+            </li>
+            <li><a href="#top">Back to Top</a></li>
+        </ul>
+    </section>
+
+    <hr>
+
+    
+    <section id="terms-info">
+        <h2>Terms and Conditions</h2>
+
+        <details>
+            <summary>Read the Terms and Conditions</summary>
+
+            <ol>
+                <li>Passengers must provide correct booking information.</li>
+                <li>Passengers should arrive at the pickup location on time.</li>
+                <li>Bookings and feedback submitted on this demo website
+                    are not stored or processed by a real transportation service.</li>
+            </ol>
+        </details>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2026 MotoRides Transportation Services. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+    
